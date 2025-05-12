@@ -241,7 +241,7 @@ async def show_users(client, message: Message):
     if subscription_data:
         users_list = "\n".join(
             [f"{idx + 1}. User ID: `{user[0]}`, Expiration Date: `{user[1]}`" for idx, user in enumerate(subscription_data)]
-        
+        )
         await message.reply_text(f"**👥 Current Subscribed Users:**\n\n{users_list}")
     else:
         await message.reply_text("ℹ️ No users found in the subscription data.")
