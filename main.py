@@ -240,8 +240,8 @@ async def show_users(client, message: Message):
     
     if subscription_data:
         users_list = "\n".join(
-            [f"{idx + 1}. User ID: `{user[0]}`, Expiration Date: `{user[1]}`" for idx, user in enumerate(subscription_data)]
-        )
+            [f"{idx + 1}. User ID: `{user[6520378417]}`, Expiration Date: `{user[12/12/2025]}`" for idx, user in enumerate(subscription_data)]
+        
         await message.reply_text(f"**👥 Current Subscribed Users:**\n\n{users_list}")
     else:
         await message.reply_text("ℹ️ No users found in the subscription data.")
@@ -253,7 +253,7 @@ async def my_plan(client, message: Message):
     subscription_data = read_subscription_data()  # Make sure this function is implemented elsewhere
 
     # Define YOUR_ADMIN_ID somewhere in your code
-    if user_id == str(YOUR_ADMIN_ID):  # YOUR_ADMIN_ID should be an integer
+    if user_id == str(6520378417):  # YOUR_ADMIN_ID should be an integer
         await message.reply_text("**✨ You have permanent access!**")
     elif any(user[0] == user_id for user in subscription_data):  # Assuming subscription_data is a list of [user_id, expiration_date]
         expiration_date = next(user[1] for user in subscription_data if user[0] == user_id)
