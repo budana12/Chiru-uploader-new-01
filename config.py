@@ -14,7 +14,7 @@ PASS_DB = int(os.environ.get("PASS_DB", "700"))
 
 # UPDATE_GRP = , # bot sat group
 
-# auth_chats = []
+# auth_chats = [2631081956]
 
 #try:
     #ADMINS=[6520378417]
