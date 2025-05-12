@@ -54,7 +54,7 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="tg://user?id=7517045929"),
+            InlineKeyboardButton(text="📞 Contact", url="tg://user?id=6520378417"),
             InlineKeyboardButton(text="🔍 Channel", url="https://t.me/skillwithchiru"),
         ],
     ]
@@ -125,7 +125,7 @@ async def start_command(bot: Client, message: Message):
     await bot.send_photo(
         chat_id=message.chat.id,
         photo=random_image_url,
-        caption=caption.format(message.from_user.mention),
+        caption=caption.format(message.from_user.6520378417),
         reply_markup=keyboard
     )
 
